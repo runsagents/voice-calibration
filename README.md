@@ -1,5 +1,23 @@
 # voice-calibration
 
+| | |
+|---|---|
+| **Problem** | Agent drafts in your voice flatten into generic corporate prose that people can spot |
+| **Theory** | [Authorship style transfer](https://aclanthology.org/2024.findings-emnlp.781/) generates text in the recognizable style of a target author |
+| **This tool** | A private corpus becomes a corrected style guide refined through blind human tests |
+
+```mermaid
+flowchart LR
+  A[Private message corpus] --> B[Pattern analysis]
+  B --> C[Style guide]
+  C --> D[Blind draft test]
+  D --> E[Human corrections]
+  E --> C
+  D -->|Pass| F[Calibrated template]
+  F --> G[Draft in your voice]
+```
+
+
 Every AI draft "in your voice" sounds like LinkedIn. This is the method that fixed mine, my agent now drafts messages my friends can't flag, down to the punctuation quirks.
 
 ## The method (one afternoon)
