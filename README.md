@@ -20,3 +20,7 @@ The corpus never needs to leave your machine, point a local agent at it. The fin
 License: CC0 · v1.0.0
 
 ,  [@runsagents](https://x.com/runsagents)
+
+## Terminology & prior art
+This pattern is known in the field as [authorship style transfer](https://aclanthology.org/2024.findings-emnlp.781/), related to [persona-based generation](https://aclanthology.org/P16-1094/).
+This implementation derives the target voice from a personal corpus and calibrates agent output to it.
